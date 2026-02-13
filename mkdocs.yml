@@ -2,48 +2,122 @@ site_name: OitoPorOito Docs
 site_url: https://docs.oitoporoito.org/
 
 repo_url: https://github.com/Oito-Por-Oito/docs
-repo_name: oitoporoito/docs
+repo_name: Oito-Por-Oito/docs
 edit_uri: edit/main/docs/
 
 theme:
   name: material
   language: pt-BR
+
   logo: assets/logo.png
   favicon: assets/favicon.png
 
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  icon:
+    repo: fontawesome/brands/github
+
   features:
+    # Navegação / UX
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - toc.follow
+
+    # Conteúdo
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
     - search.highlight
 
+    # Header
+    - header.autohide
+
   palette:
+    # Light (dourado/bege)
     - scheme: default
-      primary: blue
-      accent: blue
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+
+    # Dark (grafite + dourado)
     - scheme: slate
-      primary: blue
-      accent: blue
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
 
 nav:
   - Início: index.md
-  - Começando:
-      - Instalação: getting-started.md
-  - Arquitetura:
-      - Visão Geral: architecture.md
+  
+  - Guia do Usuário:
+      - Visão Geral: user-guide/overview.md
+      - Criando Conta: user-guide/creating-account.md
+      - Jogar Partidas: user-guide/playing-games.md
+      - Jogar vs Computador: user-guide/play-computer.md
+      - Resolver Puzzles: user-guide/solving-puzzles.md
+      - Aprender Xadrez: user-guide/learning.md
+      - Rede Social: user-guide/social-features.md
+  
+  - Desenvolvimento:
+      - Começando:
+          - Instalação: development/getting-started.md
+          - Configuração: development/configuration.md
+          - Primeiro Projeto: development/first-project.md
+      - Arquitetura:
+          - Visão Geral: development/architecture/overview.md
+          - Frontend: development/architecture/frontend.md
+          - Backend: development/architecture/backend.md
+          - Banco de Dados: development/architecture/database.md
+      - Componentes:
+          - Visão Geral: development/components/overview.md
+  
   - API:
-      - Referência: api.md
+      - Introdução: api/introduction.md
+      - Autenticação: api/authentication.md
+      - Partidas: api/games.md
+  
+  - Deployment:
+      - Visão Geral: deployment/overview.md
+  
   - Contribuição:
-      - Como Contribuir: contributing.md
+      - Como Contribuir: contributing/how-to-contribute.md
+      - Código de Conduta: contributing/code-of-conduct.md
+      - Guia de Estilo: contributing/style-guide.md
+      - Processo de Review: contributing/review-process.md
+  
+  - Recursos:
+      - FAQ: resources/faq.md
+      - Glossário: resources/glossary.md
+      - Links Úteis: resources/useful-links.md
+      - Changelog: resources/changelog.md
 
 plugins:
-  - search
+  - search:
+      lang: pt
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.tabbed:
       alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Oito-Por-Oito
