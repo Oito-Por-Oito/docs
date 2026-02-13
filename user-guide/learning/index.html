@@ -1,0 +1,3754 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.oitoporoito.org/user-guide/learning/">
+      
+      
+        <link rel="prev" href="../solving-puzzles/">
+      
+      
+        <link rel="next" href="../social-features/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Aprender Xadrez - OitoPorOito Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sistema-de-aprendizado" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="OitoPorOito Docs" class="md-header__button md-logo" aria-label="OitoPorOito Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OitoPorOito Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Aprender Xadrez
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="deep-orange"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-orange"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Oito-Por-Oito/docs" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Oito-Por-Oito/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  Guia do Usuário
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/getting-started/" class="md-tabs__link">
+          
+  
+  
+  Desenvolvimento
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api/introduction/" class="md-tabs__link">
+          
+  
+  
+  API
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deployment/overview/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contributing/how-to-contribute/" class="md-tabs__link">
+          
+  
+  
+  Contribuição
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/faq/" class="md-tabs__link">
+          
+  
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OitoPorOito Docs" class="md-nav__button md-logo" aria-label="OitoPorOito Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    OitoPorOito Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Oito-Por-Oito/docs" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Oito-Por-Oito/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia do Usuário
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia do Usuário
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating-account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criando Conta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../playing-games/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jogar Partidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../play-computer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jogar vs Computador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solving-puzzles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resolver Puzzles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprender Xadrez
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aprender Xadrez
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão Geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como Funciona
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trilhas-de-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trilhas de Aprendizado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trilhas de Aprendizado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iniciante-0-800" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐣 Iniciante (0-800)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐣 Iniciante (0-800)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basico-800-1200" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ♟️ Básico (800-1200)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="♟️ Básico (800-1200)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intermediario-1200-1600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚔️ Intermediário (1200-1600)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚔️ Intermediário (1200-1600)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avancado-1600-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏆 Avançado (1600-2000)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏆 Avançado (1600-2000)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mestre-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👑 Mestre (2000+)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👑 Mestre (2000+)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#areas-de-estudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Áreas de Estudo:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-das-licoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formato das Lições
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formato das Lições">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Teoria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-aulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎥 Vídeo-aulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercicios-interativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Exercícios Interativos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Questionários
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cursos-tematicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cursos Temáticos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cursos Temáticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cursos-essenciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔰 Cursos Essenciais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-taticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚔️ Cursos de Táticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-estrategia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Cursos de Estratégia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-aberturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Cursos de Aberturas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 Cursos de Aberturas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-brancas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Brancas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-negras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Negras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Cursos de Finais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-progresso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Progresso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de Progresso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xp-e-niveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XP e Níveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Certificados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conquistas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-de-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análise de Desempenho
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise de Desempenho">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard Personalizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendacoes-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recomendações Personalizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracao-com-pratica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integração com Prática
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integração com Prática">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spaced-repetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spaced Repetition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicacao-imediata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicação Imediata
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instrutores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instrutores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instrutores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipe-de-ensino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equipe de Ensino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conteudo-da-comunidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteúdo da Comunidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos Premium
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursos Premium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assinatura-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assinatura Pro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coaching-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coaching Individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plano-de-estudo-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plano de Estudo Exemplo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plano de Estudo Exemplo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jogador-1200-rating-meta-1400-em-3-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jogador 1200 Rating - Meta: 1400 em 3 meses
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-para-melhores-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dicas para Melhores Resultados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dicas para Melhores Resultados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Faça
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Evite
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suporte-de-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suporte de Aprendizado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Suporte de Aprendizado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comunidade-de-estudantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comunidade de Estudantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#central-de-ajuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Central de Ajuda
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../social-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rede Social
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desenvolvimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Desenvolvimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Começando
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Começando
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuração
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/first-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primeiro Projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/architecture/database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Banco de Dados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Componentes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Componentes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/components/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autenticação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/games/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Partidas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuição
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contribuição
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/how-to-contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como Contribuir
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/code-of-conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Código de Conduta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/style-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia de Estilo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/review-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processo de Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Recursos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/useful-links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Links Úteis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão Geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como Funciona
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trilhas-de-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trilhas de Aprendizado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trilhas de Aprendizado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iniciante-0-800" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐣 Iniciante (0-800)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐣 Iniciante (0-800)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basico-800-1200" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ♟️ Básico (800-1200)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="♟️ Básico (800-1200)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intermediario-1200-1600" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚔️ Intermediário (1200-1600)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚔️ Intermediário (1200-1600)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avancado-1600-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏆 Avançado (1600-2000)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏆 Avançado (1600-2000)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mestre-2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👑 Mestre (2000+)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👑 Mestre (2000+)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#areas-de-estudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Áreas de Estudo:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-das-licoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formato das Lições
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formato das Lições">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Teoria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-aulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎥 Vídeo-aulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercicios-interativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Exercícios Interativos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Questionários
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cursos-tematicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cursos Temáticos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cursos Temáticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cursos-essenciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔰 Cursos Essenciais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-taticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚔️ Cursos de Táticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-estrategia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Cursos de Estratégia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-aberturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Cursos de Aberturas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 Cursos de Aberturas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-brancas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Brancas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-negras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para Negras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cursos-de-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏁 Cursos de Finais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-de-progresso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sistema de Progresso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistema de Progresso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xp-e-niveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XP e Níveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Certificados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conquistas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-de-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análise de Desempenho
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análise de Desempenho">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard Personalizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recomendacoes-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recomendações Personalizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracao-com-pratica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integração com Prática
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integração com Prática">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spaced-repetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spaced Repetition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplicacao-imediata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicação Imediata
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instrutores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instrutores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instrutores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equipe-de-ensino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equipe de Ensino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conteudo-da-comunidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conteúdo da Comunidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recursos Premium
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursos Premium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assinatura-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assinatura Pro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coaching-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coaching Individual
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plano-de-estudo-exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plano de Estudo Exemplo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plano de Estudo Exemplo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jogador-1200-rating-meta-1400-em-3-meses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jogador 1200 Rating - Meta: 1400 em 3 meses
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-para-melhores-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dicas para Melhores Resultados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dicas para Melhores Resultados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Faça
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Evite
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suporte-de-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suporte de Aprendizado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Suporte de Aprendizado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comunidade-de-estudantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comunidade de Estudantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#central-de-ajuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Central de Ajuda
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="sistema-de-aprendizado">Sistema de Aprendizado</h1>
+<p>Aprenda xadrez de forma estruturada e progressiva.</p>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>O OitoPorOito oferece um sistema completo de aprendizado adaptado ao seu nível, desde iniciante absoluto até jogador avançado.</p>
+<h2 id="como-funciona">Como Funciona</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph TD
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    A[Avaliação Inicial] --&gt; B[Plano Personalizado]
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    B --&gt; C[Módulos de Estudo]
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    C --&gt; D[Prática]
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    D --&gt; E{Dominou?}
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    E --&gt;|Não| C
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    E --&gt;|Sim| F[Próximo Módulo]
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    F --&gt; G[Avaliação Contínua]
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    G --&gt; B
+</code></pre></div>
+<h2 id="trilhas-de-aprendizado">Trilhas de Aprendizado</h2>
+<h3 id="iniciante-0-800">🐣 Iniciante (0-800)</h3>
+<p><strong>Objetivo</strong>: Aprender regras e conceitos básicos</p>
+<h4 id="modulos">Módulos:</h4>
+<ol>
+<li><strong>Regras Básicas</strong> (1-2 horas)</li>
+<li>Como as peças se movem</li>
+<li>Objetivo do jogo (xeque-mate)</li>
+<li>Regras especiais (roque, en passant, promoção)</li>
+<li>
+<p>Empate e outros resultados</p>
+</li>
+<li>
+<p><strong>Tática Elementar</strong> (2-3 horas)</p>
+</li>
+<li>Mate com Dama</li>
+<li>Mate com Torre  </li>
+<li>Proteção de peças</li>
+<li>
+<p>Capturas vantajosas</p>
+</li>
+<li>
+<p><strong>Aberturas para Iniciantes</strong> (1 hora)</p>
+</li>
+<li>Princípios de abertura</li>
+<li>Desenvolvimento rápido</li>
+<li>Controle do centro</li>
+<li>
+<p>Segurança do rei</p>
+</li>
+<li>
+<p><strong>Finais Básicos</strong> (2 horas)</p>
+</li>
+<li>Rei e peão vs Rei</li>
+<li>Quadrado do peão</li>
+<li>Oposição</li>
+<li>Finais elementares</li>
+</ol>
+<p><strong>Práticas:</strong>
+- Puzzles de mate em 1
+- Partidas contra computador (nível 1-2)
+- Exercises interativos</p>
+<h3 id="basico-800-1200">♟️ Básico (800-1200)</h3>
+<p><strong>Objetivo</strong>: Desenvolver habilidades táticas fundamentais</p>
+<h4 id="modulos_1">Módulos:</h4>
+<ol>
+<li><strong>Táticas Fundamentais</strong> (3-4 horas)</li>
+<li>Garfo (Fork)</li>
+<li>Espeto (Skewer)</li>
+<li>Cravada (Pin)</li>
+<li>Ataque duplo</li>
+<li>
+<p>Ataque descoberto</p>
+</li>
+<li>
+<p><strong>Estratégia Inicial</strong> (2 horas)</p>
+</li>
+<li>Peças boas vs ruins</li>
+<li>Estrutura de peões</li>
+<li>Casas fracas</li>
+<li>
+<p>Espaço e mobilidade</p>
+</li>
+<li>
+<p><strong>Aberturas Sólidas</strong> (2-3 horas)</p>
+</li>
+<li>Abertura Italiana</li>
+<li>Defesa Francesa</li>
+<li>Siciliana (ideia básica)</li>
+<li>
+<p>Gambito da Dama</p>
+</li>
+<li>
+<p><strong>Finais de Peões</strong> (2 horas)</p>
+</li>
+<li>Finais com múltiplos peões</li>
+<li>Breakthroughs</li>
+<li>Zugzwang</li>
+<li>Rei ativo</li>
+</ol>
+<p><strong>Práticas:</strong>
+- Puzzles 800-1200
+- Partidas temáticas
+- Análise de erros</p>
+<h3 id="intermediario-1200-1600">⚔️ Intermediário (1200-1600)</h3>
+<p><strong>Objetivo</strong>: Expandir repertório e melhorar cálculo</p>
+<h4 id="modulos_2">Módulos:</h4>
+<ol>
+<li><strong>Táticas Avançadas</strong> (4-5 horas)</li>
+<li>Sacrifícios de Dama</li>
+<li>Desvio e afastamento</li>
+<li>Sobrecarga</li>
+<li>Interferência</li>
+<li>
+<p>Mate de corredor</p>
+</li>
+<li>
+<p><strong>Planejamento Estratégico</strong> (3-4 horas)</p>
+</li>
+<li>Elaboração de planos</li>
+<li>Identificação de fraquezas</li>
+<li>Jogo posicional</li>
+<li>
+<p>Profilaxia</p>
+</li>
+<li>
+<p><strong>Repertório de Aberturas</strong> (5-6 horas)</p>
+</li>
+<li>Escolha de abertura para Brancas</li>
+<li>Repertório para Negras</li>
+<li>Estruturas típicas</li>
+<li>
+<p>Planos de meio-jogo</p>
+</li>
+<li>
+<p><strong>Técnica de Finais</strong> (4-5 horas)</p>
+</li>
+<li>Torre e peão vs Torre</li>
+<li>Finais de Bispos</li>
+<li>Bispo vs Cavalo</li>
+<li>Final de Damas</li>
+</ol>
+<p><strong>Práticas:</strong>
+- Puzzle Rush
+- Partidas longas analisadas
+- Estudos de GMs</p>
+<h3 id="avancado-1600-2000">🏆 Avançado (1600-2000)</h3>
+<p><strong>Objetivo</strong>: Refinamento e profundidade</p>
+<h4 id="modulos_3">Módulos:</h4>
+<ol>
+<li><strong>Táticas Complexas</strong> (5-6 horas)</li>
+<li>Combinações de múltiplas peças</li>
+<li>Cálculo profundo (5+ lances)</li>
+<li>Defesas difíceis</li>
+<li>
+<p>Contra-jogo</p>
+</li>
+<li>
+<p><strong>Estratégia Avançada</strong> (5-6 horas)</p>
+</li>
+<li>Compensação por material</li>
+<li>Dinâmica vs estático</li>
+<li>Jogo de Bispos opostos</li>
+<li>
+<p>Minoria attack</p>
+</li>
+<li>
+<p><strong>Preparação de Aberturas</strong> (8-10 horas)</p>
+</li>
+<li>Estudo profundo de linhas</li>
+<li>Novidades teóricas</li>
+<li>Preparação contra oponentes</li>
+<li>
+<p>Transição ao meio-jogo</p>
+</li>
+<li>
+<p><strong>Finais Técnicos</strong> (6-8 horas)</p>
+</li>
+<li>Finais de Dama complexos</li>
+<li>Fortresses (fortalezas)</li>
+<li>Finais com múltiplas peças</li>
+<li>Estudos artísticos</li>
+</ol>
+<p><strong>Práticas:</strong>
+- Análise com engine
+- Partidas de torneio
+- Estudo de partidas clássicas</p>
+<h3 id="mestre-2000">👑 Mestre (2000+)</h3>
+<p><strong>Objetivo</strong>: Maestria e especialização</p>
+<h4 id="areas-de-estudo">Áreas de Estudo:</h4>
+<ol>
+<li><strong>Preparação Profissional</strong></li>
+<li>Repertório de Grandes Mestres</li>
+<li>Computer preparation</li>
+<li>Psychology at the board</li>
+<li>
+<p>Gerenciamento de tempo</p>
+</li>
+<li>
+<p><strong>Habilidades Especializadas</strong></p>
+</li>
+<li>Jogo posicional profundo</li>
+<li>Ataque ao Rei</li>
+<li>Endgame theory</li>
+<li>Specific opening systems</li>
+</ol>
+<p><strong>Práticas:</strong>
+- Torneios online rated
+- Coaching 1-on-1
+- Análise com GMs</p>
+<h2 id="formato-das-licoes">Formato das Lições</h2>
+<h3 id="teoria">📖 Teoria</h3>
+<p>Explicações escritas com diagramas interativos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>┌─────────────────────────────────┐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>│ 🎓 Lição: Garfo de Cavalo       │
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├─────────────────────────────────┤
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│                                 │
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│  O Garfo ocorre quando uma      │
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│  peça ataca duas ou mais peças  │
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│  simultaneamente.               │
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│                                 │
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│  [Diagrama Interativo]          │
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│                                 │
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│  No exemplo, o Cavalo em d5     │
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│  ataca Rei (e7) e Torre (b6).   │
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│                                 │
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│  ➡️ Rei deve mover              │
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│  ➡️ Torre é capturada            │
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│                                 │
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>│  [Próximo Exemplo]              │
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>└─────────────────────────────────┘
+</code></pre></div>
+<h3 id="video-aulas">🎥 Vídeo-aulas</h3>
+<p>Apresentações gravadas por instrutores:</p>
+<ul>
+<li>Duração: 5-15 minutos  </li>
+<li>Legendas em Português</li>
+<li>Velocidade ajustável</li>
+<li>Marcações para seções</li>
+</ul>
+<h3 id="exercicios-interativos">💻 Exercícios Interativos</h3>
+<p>Pratique o que aprendeu:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Exemplo: Identificar garfos</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">Posição</span><span class="w"> </span><span class="mf">1</span><span class="o">/</span><span class="mf">5</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">Encontre</span><span class="w"> </span><span class="nx">o</span><span class="w"> </span><span class="nx">garfo</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">cavalo</span><span class="w"> </span><span class="nx">nesta</span><span class="w"> </span><span class="nx">posição</span><span class="o">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">[</span><span class="nx">Tabuleiro</span><span class="w"> </span><span class="nx">Interativo</span><span class="p">]</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">Tentativas</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="o">/</span><span class="mf">3</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nx">Dica</span><span class="w"> </span><span class="nx">disponível</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span>
+</code></pre></div>
+<h3 id="questionarios">📝 Questionários</h3>
+<p>Teste seu conhecimento:</p>
+<ul>
+<li>Múltipla escolha</li>
+<li>Verdadeiro/Falso</li>
+<li>Análise de posições</li>
+<li>Nota mínima: 70% para progredir</li>
+</ul>
+<h2 id="cursos-tematicos">Cursos Temáticos</h2>
+<h3 id="cursos-essenciais">🔰 Cursos Essenciais</h3>
+<ul>
+<li><strong>Do Zero ao Xadrez</strong>: 10 horas, gratuito</li>
+<li><strong>Táticas Básicas</strong>: 8 horas, gratuito</li>
+<li><strong>Aberturas 101</strong>: 12 horas, gratuito</li>
+</ul>
+<h3 id="cursos-de-taticas">⚔️ Cursos de Táticas</h3>
+<ul>
+<li><strong>Mestria em Garfos</strong>: 4 horas</li>
+<li><strong>Combinações Brilhantes</strong>: 6 horas</li>
+<li><strong>Defesa Tática</strong>: 5 horas</li>
+<li><strong>Cálculo de Variantes</strong>: 8 horas</li>
+</ul>
+<h3 id="cursos-de-estrategia">🎯 Cursos de Estratégia</h3>
+<ul>
+<li><strong>Planejamento em Xadrez</strong>: 6 horas</li>
+<li><strong>Estruturas de Peões</strong>: 8 horas</li>
+<li><strong>Peças Boas e Más</strong>: 4 horas</li>
+<li><strong>Vantagem Posicional</strong>: 7 horas</li>
+</ul>
+<h3 id="cursos-de-aberturas">📖 Cursos de Aberturas</h3>
+<h4 id="para-brancas">Para Brancas</h4>
+<ul>
+<li><strong>Repertório com 1.e4</strong>: 15 horas</li>
+<li><strong>Repertório com 1.d4</strong>: 15 horas</li>
+<li><strong>Sistemas Universais</strong>: 10 horas</li>
+</ul>
+<h4 id="para-negras">Para Negras</h4>
+<ul>
+<li><strong>Defesa contra 1.e4</strong>: 12 horas</li>
+<li><strong>Defesa contra 1.d4</strong>: 12 horas</li>
+<li><strong>Defesas Hipermodernas</strong>: 8 horas</li>
+</ul>
+<h3 id="cursos-de-finais">🏁 Cursos de Finais</h3>
+<ul>
+<li><strong>Finais de Peões</strong>: 8 horas</li>
+<li><strong>Finais de Torres</strong>: 10 horas</li>
+<li><strong>Finais Menores</strong>: 6 horas</li>
+<li><strong>Finais Complexos</strong>: 12 horas</li>
+</ul>
+<h2 id="sistema-de-progresso">Sistema de Progresso</h2>
+<h3 id="xp-e-niveis">XP e Níveis</h3>
+<p>Ganhe experiência estudando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Nível 1 ────► Nível 2 ────► Nível 3
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  100 XP        300 XP        600 XP
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Ganhe XP:
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>✅ Completar lição: 10-50 XP
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>✅ Passar questionário: 20-100 XP
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>✅ Prática diária: 10 XP
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>✅ Resolver puzzles: 5-15 XP
+</code></pre></div>
+<h3 id="certificados">Certificados</h3>
+<p>Receba certificados ao completar cursos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>┌───────────────────────────────────┐
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>│  🏆 CERTIFICADO DE CONCLUSÃO      │
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>│                                   │
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>│  Israel Neto completou com        │
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>│  sucesso o curso:                 │
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>│                                   │
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>│  &quot;Táticas Fundamentais&quot;           │
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>│                                   │
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>│  Nota Final: 94%                  │
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>│  Data: 15/Janeiro/2024            │
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>│                                   │
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>│  ✓ Válido                         │
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>└───────────────────────────────────┘
+</code></pre></div>
+<h3 id="conquistas">Conquistas</h3>
+<p>Desbloqueie badges especiais:</p>
+<table>
+<thead>
+<tr>
+<th>Badge</th>
+<th>Como Ganhar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📚 <strong>Estudioso</strong></td>
+<td>Complete 10 lições</td>
+</tr>
+<tr>
+<td>🎓 <strong>Graduado</strong></td>
+<td>Complete 1 curso</td>
+</tr>
+<tr>
+<td>🏆 <strong>Mestre Estudante</strong></td>
+<td>Complete 10 cursos</td>
+</tr>
+<tr>
+<td>🔥 <strong>Dedicado</strong></td>
+<td>Estude 7 dias seguidos</td>
+</tr>
+<tr>
+<td>⚡ <strong>Relâmpago</strong></td>
+<td>Complete curso em 1 dia</td>
+</tr>
+</tbody>
+</table>
+<h2 id="analise-de-desempenho">Análise de Desempenho</h2>
+<h3 id="dashboard-personalizado">Dashboard Personalizado</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>╔════════════════════════════════════╗
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>║  📊 SEU PROGRESSO DE APRENDIZADO   ║
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>╠════════════════════════════════════╣
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>║  Nível Atual:         12 ⭐        ║
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>║  XP:                  3,847 / 5,000║
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>║  Cursos Completos:    5            ║
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>║  Em Andamento:        2            ║
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>║  Tempo Total:         42h 18m      ║
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>║  Sequência:           9 dias 🔥    ║
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>╚════════════════════════════════════╝
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>📈 Áreas de Força:
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>▓▓▓▓▓▓▓▓▓░ Táticas (92%)
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>▓▓▓▓▓▓▓░░░ Aberturas (74%)
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>📉 Áreas para Melhorar:
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>▓▓▓▓░░░░░░ Finais (43%)
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>▓▓▓▓▓░░░░░ Estratégia (56%)
+</code></pre></div>
+<h3 id="recomendacoes-personalizadas">Recomendações Personalizadas</h3>
+<p>Com base no seu desempenho:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>💡 Próximos Passos Recomendados:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>1. 🎯 Finalizar: &quot;Estruturas de Peões&quot; (60% completo)
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>2. ⚠️ Melhorar: Finais (score baixo)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>3. ➡️ Começar: &quot;Finais de Torres&quot; (recomendado)
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>4. 🔄 Revisar: &quot;Garfos e Espetos&quot; (30 dias atrás)
+</code></pre></div>
+<h2 id="integracao-com-pratica">Integração com Prática</h2>
+<h3 id="spaced-repetition">Spaced Repetition</h3>
+<p>Sistema automático de revisão:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Você aprendeu &quot;Mate do Pastor&quot; há 7 dias
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>⏰ Hora de revisar!
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>[Iniciar Revisão]
+</code></pre></div>
+<h3 id="aplicacao-imediata">Aplicação Imediata</h3>
+<p>Após lições, pratique:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Você completou: &quot;Garfos de Cavalo&quot;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Pratique agora:
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>- 🎯 10 puzzles de garfos
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>- ♟️ 1 partida temática
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>- 📊 Quiz de garfos
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>[Começar Prática]
+</code></pre></div>
+<h2 id="instrutores">Instrutores</h2>
+<h3 id="equipe-de-ensino">Equipe de Ensino</h3>
+<ul>
+<li><strong>GM Marcus Silva</strong> - Aberturas</li>
+<li><strong>WGM Ana Costa</strong> - Táticas</li>
+<li><strong>FM João Santos</strong> - Finais</li>
+<li><strong>IM Clara Oliveira</strong> - Estratégia</li>
+</ul>
+<h3 id="conteudo-da-comunidade">Conteúdo da Comunidade</h3>
+<p>Jogadores podem criar conteúdo:</p>
+<ul>
+<li>Enviar lições</li>
+<li>Gravar vídeos</li>
+<li>Criar quizzes</li>
+<li>Compartilhar estudos</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Verificado</p>
+<p>Conteúdo passa por revisão antes de publicação</p>
+</div>
+<h2 id="recursos-premium">Recursos Premium</h2>
+<h3 id="assinatura-pro">Assinatura Pro</h3>
+<p><strong>R$ 29,90/mês</strong> ou <strong>R$ 299/ano</strong></p>
+<p>Inclui:
+- ✅ Todos os cursos desbloqueados
+- ✅ Aulas ao vivo mensais
+- ✅ Análise de engine ilimitada
+- ✅ Coaching 1-on-1 (1 sessão/mês)
+- ✅ Comunidade exclusiva
+- ✅ Certificados premium
+- ✅ Sem anúncios</p>
+<h3 id="coaching-individual">Coaching Individual</h3>
+<p>Sessões privadas com instrutores:</p>
+<table>
+<thead>
+<tr>
+<th>Instrutor</th>
+<th>Rating</th>
+<th>Preço/hora</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GM Marcus Silva</td>
+<td>2600</td>
+<td>R$ 200</td>
+</tr>
+<tr>
+<td>WGM Ana Costa</td>
+<td>2400</td>
+<td>R$ 150</td>
+</tr>
+<tr>
+<td>FM João Santos</td>
+<td>2350</td>
+<td>R$ 100</td>
+</tr>
+<tr>
+<td>IM Clara Oliveira</td>
+<td>2450</td>
+<td>R$ 120</td>
+</tr>
+</tbody>
+</table>
+<h2 id="plano-de-estudo-exemplo">Plano de Estudo Exemplo</h2>
+<h3 id="jogador-1200-rating-meta-1400-em-3-meses">Jogador 1200 Rating - Meta: 1400 em 3 meses</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Semana 1-2: Táticas Fundamentais
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>- Segunda/Quarta/Sexta: 1 lição (30min) + 20 puzzles
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>- Terça/Quinta: Partidas (2x15min) com análise
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>- Sábado: Revisão semanal
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>- Domingo: Puzzle Rush
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>Semana 3-4: Aberturas (Italiano para Brancas)
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>- Segunda/Quarta/Sexta: 1 lição abertura + 15 puzzles
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>- Terça/Quinta: Partidas temáticas (Italiano)
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>- Sábado: Quiz de abertura
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>- Domingo: Descanso
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>Semana 5-6: Finais de Peões
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>- Segunda/Quarta/Sexta: 1 lição finais + 15 puzzles
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>- Terça/Quinta: Endgame practice positions
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>- Sábado: Simulação de torneio
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>- Domingo: Análise de partidas
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>Semana 7-8: Estratégia Básica
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>- Segunda/Quarta/Sexta: 1 lição + 15 puzzles
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>- Terça/Quinta: Partidas longas (15+10)
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>- Sábado: Revisão mensal
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>- Domingo: Torneio online
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>Semana 9-12: Consolidação e Prática
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>- Mix de todos os tópicos
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>- Foco em fraquezas identificadas
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>- Aumento de volume de partidas
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>- Avaliação de progresso
+</code></pre></div>
+<h2 id="dicas-para-melhores-resultados">Dicas para Melhores Resultados</h2>
+<h3 id="faca">✅ Faça</h3>
+<ol>
+<li><strong>Consistência</strong>: 30min/dia &gt; 3h/sábado</li>
+<li><strong>Revise</strong>: Spaced repetition funciona</li>
+<li><strong>Analise</strong>: Entenda seus erros</li>
+<li><strong>Varie</strong>: Mix de teoria e prática</li>
+<li><strong>Desafie-se</strong>: Saia da zona de conforto</li>
+</ol>
+<h3 id="evite">❌ Evite</h3>
+<ol>
+<li><strong>Pular fundamentos</strong>: Base é crucial</li>
+<li><strong>Apressur</strong>: Domínio &gt; velocidade</li>
+<li><strong>Só teoria</strong>: Precisa praticar</li>
+<li><strong>Só prática</strong>: Precisa estudar</li>
+<li><strong>Desanimar</strong>: Plateaus são normais</li>
+</ol>
+<h2 id="suporte-de-aprendizado">Suporte de Aprendizado</h2>
+<h3 id="comunidade-de-estudantes">Comunidade de Estudantes</h3>
+<ul>
+<li>💬 Fórum de discussão</li>
+<li>📹 Sessões de estudo em grupo</li>
+<li>🤝 Sistema de buddy study</li>
+<li>📚 Clube do livro de xadrez</li>
+</ul>
+<h3 id="central-de-ajuda">Central de Ajuda</h3>
+<ul>
+<li>📩 Email: learn@oitoporoito.com</li>
+<li>💬 Chat ao vivo (Pro members)</li>
+<li>📚 Knowledge base</li>
+<li>🎥 FAQs em vídeo</li>
+</ul>
+<hr />
+<p><strong>Comece sua jornada hoje:</strong>
+- <a href="../creating-account/">Criar Conta</a>
+- <a href="../overview/">Avaliação Inicial</a>
+- <a href="../solving-puzzles/">Puzzles para Praticar</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Oito-Por-Oito" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "content.code.annotate", "content.tabs.link", "search.suggest", "search.highlight", "header.autohide"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
