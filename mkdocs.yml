@@ -1,0 +1,49 @@
+site_name: OitoPorOito Docs
+site_url: https://docs.oitoporoito.org/
+
+repo_url: https://github.com/Oito-Por-Oito/docs
+repo_name: oitoporoito/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+    - scheme: slate
+      primary: blue
+      accent: blue
+
+nav:
+  - Início: index.md
+  - Começando:
+      - Instalação: getting-started.md
+  - Arquitetura:
+      - Visão Geral: architecture.md
+  - API:
+      - Referência: api.md
+  - Contribuição:
+      - Como Contribuir: contributing.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
